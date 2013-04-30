@@ -12,13 +12,14 @@
     
   <groupId>test</groupId>
   <artifactId>hello</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <scm>
-    <connection>scm:git:https://github.com/eemaric/test.git</connection>
-    <developerConnection>scm:git:https://github.com/eemaric/test.git</developerConnection>
-    <url>scm:git:https://github.com/eemaric/test.git</url>
+    <connection>scm:git:git@github.com:eemaric/test.git</connection>
+    <developerConnection>scm:git:git@github.com:eemaric/test.git</developerConnection>
+    <url>scm:git:git@github.com:eemaric/test.git</url>
+    <tag>hello-1.0</tag>
   </scm>
 
 
