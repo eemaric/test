@@ -73,8 +73,6 @@
                 
                     <configuration>
 			<tagNameFormat>@{project.version}</tagNameFormat>
-                        <preparationGoals>clean verify</preparationGoals>
-                        <goals>install</goals>
                     </configuration>
                 </plugin>
                 
