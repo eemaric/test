@@ -21,7 +21,18 @@
     <url>scm:git:https://github.com/eemaric/test.git</url>
   </scm>
 
-
+  <distributionManagement>
+      <repository>
+          <id>fakerepo</id>
+          <name>Local file system</name>
+          <url>file:///tmp</url>
+      </repository>
+      <snapshotRepository>
+          <id>fakesnapshotrepo</id>
+          <name>Local file system</name>
+          <url>file:///tmp/snap</url>
+      </snapshotRepository>
+  </distributionManagement>
 
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>
@@ -72,7 +83,7 @@
                     <version>2.3.2</version>
                 
                     <configuration>
-			<localCheckout>true</localCheckout>
+			<!--localCheckout>true</localCheckout-->
 			<tagNameFormat>@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
