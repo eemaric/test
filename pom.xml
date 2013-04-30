@@ -34,49 +34,10 @@
       </snapshotRepository>
   </distributionManagement>
 
-  <name>Maven Quick Start Archetype</name>
-  <url>http://maven.apache.org</url>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.8.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>    
-    
     <!-- B U I L D  S E C T I O N                                             -->
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.0.2</version>
-                    <configuration>
-                        <encoding>${project.build.sourceEncoding}</encoding>
-                        <source>1.5</source>
-                        <target>1.5</target>
-                        <debug>true</debug>
-                        <optimize>false</optimize>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>build-helper-maven-plugin</artifactId>
-                    <version>1.5</version>
-                    <executions>
-                        <execution>
-                            <phase>validate</phase>
-                            <goals>
-                                <goal>maven-version</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!-- *************************************************************** -->
-                <!-- PLUGIN TO MANAGE RELAEASES                                      -->
-                <!-- *************************************************************** -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
@@ -84,7 +45,7 @@
                 
                     <configuration>
 			<!--localCheckout>true</localCheckout-->
-			<tagNameFormat>@{project.version}</tagNameFormat>
+			<tagNameFormat>v@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
                 
