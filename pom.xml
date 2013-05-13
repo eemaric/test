@@ -21,7 +21,7 @@
     <url>scm:git:https://github.com/eemaric/test.git</url>
     <tag>1.7</tag>
   </scm>
-
+<!--
   <distributionManagement>
       <repository>
           <id>fakerepo</id>
@@ -34,7 +34,7 @@
           <url>file:///tmp/snap</url>
       </snapshotRepository>
   </distributionManagement>
-
+-->
     <!-- B U I L D  S E C T I O N                                             -->
     <build>
         <pluginManagement>
